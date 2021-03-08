@@ -10,7 +10,7 @@ pipeline {
    stages {
    
       // skip a stage while creating the pipeline
-      stage("A stage to be skipped") {
+      stage("A stage a to be skipped") {
          when {
             expression { false }  //skip this stage
          }
