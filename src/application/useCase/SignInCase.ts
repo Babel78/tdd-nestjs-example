@@ -15,7 +15,7 @@ export default class SignInCase implements ISignInUseCase {
       userDto.email,
       userDto.password,
     )
-    console.log(user)
+    console.log("user",user)
     const foundUser: IUserDto = await this.userReadOnlyRepository.fetch(user)
     return foundUser
   }
